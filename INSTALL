@@ -1,0 +1,20 @@
+# Installing the Advent of Code Project
+
+## Prerequisites
+
+- Python 3.6 or newer
+- pip for managing Python packages
+
+## Installation
+
+Clone the repository from GitHub:
+
+```bash
+git clone https://github.com/username/repository_name.git
+```
+
+In the project directory, install the dependencies:
+
+```bash
+pip install .
+```
