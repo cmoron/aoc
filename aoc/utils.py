@@ -13,12 +13,12 @@ def get_neighbors(matrix, row, col):
     """
     rows, cols = len(matrix), len(matrix[0])
     directions = {"N": (-1, 0), "NE": (-1, 1), "E": (0, 1), "SE": (1, 1), 
-                  "S": (1, 0), "SO": (1, -1), "O": (0, -1), "NO": (-1, -1)
+                  "S": (1, 0), "SW": (1, -1), "W": (0, -1), "NW": (-1, -1)
     }
 
     neighbors = {}
     for direction, (d_row, d_col) in directions.items():
-        n_row, n_col = row + d_row, col + d_dol
+        n_row, n_col = row + d_row, col + d_col
         if 0 <= n_row < rows and 0 <= n_col < cols:
             neighbors[direction] = matrix[n_row][n_col]
 
